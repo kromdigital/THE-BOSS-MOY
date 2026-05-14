@@ -5,8 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>THEBOSSMOY</title>
-   <!-- FAVICON -->
-  <link rel="icon" type="image/png" href="logo.png">
+  <link rel="icon" href="logomoy.png">
+  <link rel="apple-touch-icon" href="logomoy.png">
+  <link rel="shortcut icon" href="logomoy.png">
 
 
   <!-- Google Fonts -->
@@ -1179,6 +1180,103 @@
   font-weight:400;
 }
 
+/* =========================================
+   FOOTER
+========================================= */
+
+.footer{
+  width:100%;
+
+  padding:35px 20px;
+
+  background:#010101;
+
+  border-top:
+  1px solid rgba(255,255,255,.06);
+
+  position:relative;
+  overflow:hidden;
+}
+
+/* LINEA GLOW */
+
+.footer::before{
+  content:"";
+
+  position:absolute;
+  top:0;
+  left:50%;
+
+  transform:translateX(-50%);
+
+  width:400px;
+  height:1px;
+
+  background:
+  linear-gradient(
+    90deg,
+    transparent,
+    rgba(255,212,0,.7),
+    transparent
+  );
+}
+
+/* CONTENT */
+
+.footer-content{
+  max-width:1400px;
+
+  margin:auto;
+
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+
+  gap:20px;
+}
+
+/* COPYRIGHT */
+
+.footer-copy{
+  color:#666;
+  font-size:14px;
+  letter-spacing:.5px;
+}
+
+/* CREDIT */
+
+.footer-credit{
+  text-decoration:none;
+
+  color:#777;
+
+  font-size:14px;
+
+  transition:.3s;
+}
+
+.footer-credit span{
+  color:var(--yellow);
+  font-weight:700;
+}
+
+.footer-credit:hover{
+  color:white;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:768px){
+
+  .footer-content{
+    flex-direction:column;
+    text-align:center;
+  }
+
+}
+
 /* =========================
    RESPONSIVE
 ========================= */
@@ -1426,7 +1524,7 @@
 
   <div class="logo-circle">
 
-    <img src="logo.png" alt="THEBOSSMOY Logo">
+    <img src="logomoy.png" alt="THEBOSSMOY Logo">
 
   </div>
 
@@ -1846,7 +1944,7 @@
     </p>
 
     <h4>
-      <span>#BossArmy</span>
+      <span>#BossMoy</span>
       está creciendo.
       <strong>¡No te quedes fuera!</strong>
     </h4>
@@ -1854,6 +1952,34 @@
   </div>
 
 </section>
+
+
+<!-- =========================================
+     FOOTER
+========================================= -->
+
+<footer class="footer">
+
+  <div class="footer-content">
+
+    <!-- COPYRIGHT -->
+    <p class="footer-copy">
+      © 2026 THEBOSSMOY · Todos los derechos reservados
+    </p>
+
+    <!-- WATERMARK -->
+    <a
+      href="https://kromdigital.github.io/Pagina-web/"
+      target="_blank"
+      class="footer-credit"
+    >
+      Esta página fue creada por
+      <span>KROM DIGITAL</span>
+    </a>
+
+  </div>
+
+</footer>
 
   <script>
 
